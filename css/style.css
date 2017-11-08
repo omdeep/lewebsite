@@ -192,7 +192,7 @@ hr {
 .btn-default.active {
 	color: #fff;
 	background-color: #121d1f;
-	border-color: #121d1f;
+	border-color: whi;
 }
 
 .btn-primary {
@@ -958,4 +958,39 @@ a:focus,
 	100% {
 		transform: translate(1px, -2px) rotate(-1deg);
 	}
+}
+
+
+/* text animation intro */
+
+@keyframes blinkcolor {
+	30% {
+		color: aqua;
+	}
+	70% {
+		color: greenyellow;
+	}
+	100% {
+		color: yellow;
+	}
+}
+
+.theme-details .we-install {
+	font-size: 17px;
+}
+
+.we-install a {
+	color: yellow;
+	padding: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	position: relative;
+	animation-name: blinkcolor;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+}
+
+.we-install a:hover {
+	animation-play-state: paused;
 }
