@@ -994,3 +994,8 @@ a:focus,
 .we-install a:hover {
 	animation-play-state: paused;
 }
+
+.small-photo {
+	width: 800px;
+	height: 533;
+}
